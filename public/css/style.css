@@ -1,0 +1,236 @@
+:root {
+    --main-color: #E3E2DF;
+    --second-color: #000000;
+    --third-color: #9a1750;
+    --fourth-color: green;
+    --fifth-color: #808080;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--main-color);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.jumbotron {
+    background-image: url('/images/jumbotron1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin-top: -75px;
+    position: relative;
+}
+
+.jumbotron>* {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron .display-3 {
+    margin-top: 150px;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.jumbotron2 {
+    margin-top: 100px;
+}
+
+.display-4 {
+    font-weight: bold;
+    font-family: poppins;
+}
+
+.jumbotron2 .btn {
+    border-radius: 2px !important;
+    padding: 14px 40px;
+}
+
+.leadfont {
+    font-family: poppinsExtralight;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.jumbotronkartu {
+    margin-top: 100px;
+    background-image: url('/images/jumbotron2.png');
+    background-size: cover;
+    height: 720px;
+    position: relative;
+}
+
+.jumbotronkartu .display-4 {
+    padding-top: 100px;
+}
+
+.ourwork {
+    text-align: center;
+}
+
+.gambarow {
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    background: var(--fourth-color);
+    border-radius: 50%;
+}
+
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title,
+.card-text {
+    text-align: center !important;
+}
+
+.card1:hover {
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+/* ------------------------------------------------------------ */
+
+.footer {
+    background-color: var(--second-color);
+    height: 350px;
+}
+
+.footer-bottom {
+    background-color: var(--second-color);
+    text-align: center;
+    color: var(--main-color);
+}
+
+.logososmed {
+    height: 40px;
+    width: 40px;
+}
+
+.footerbold {
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.cardberita {
+    font-family: poppinsLight;
+}
+
+.cardberita .card {
+    border: none;
+}
+
+.cardberita .judulberita {
+    font-weight: bold;
+    color: var(--second-color);
+    font-size: 17px;
+}
+
+.cardberita .previewberita {
+    color: var(--fifth-color);
+    font-size: 15px;
+}
+
+.cardberita .card-body {
+    background-color: var(--main-color);
+}
+
+
+/* ------------------------------------------------------------ */
+
+.areabesar {
+    margin-top: 15px;
+}
+
+.form-control {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    border-width: thick;
+}
+
+textarea {
+    resize: none;
+}
+
+.gambarkontak {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--fourth-color);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.jumbotron::after,
+.jumbotronkartu::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.navbar,
+.jumbotron .container,
+.jumbotronkartu .container,
+.jumbotronberita .container {
+    position: relative;
+    z-index: 1;
+}
+
+.leadkontak {
+    color: var(--fifth-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: var(--main-color) !important;
+}
+
+@font-face {
+    src: url('/font/Poppins-ExtraBold.ttf');
+    font-family: poppins;
+}
+
+@font-face {
+    src: url('/font/Poppins-ExtraLight.ttf');
+    font-family: poppinsExtralight;
+}
+
+@font-face {
+    src: url('/font/Poppins-Light.ttf');
+    font-family: poppinsLight;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.jumbotronberita {
+    height: 500px !important;
+}
